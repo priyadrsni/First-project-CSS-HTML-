@@ -1,0 +1,129 @@
+main {
+  padding-top: 2rem;
+}
+.background {
+  background: url('../../resources/images/plans-background.jpg') center/cover;
+  /* filter: blur(5px); */
+  /* filter: brightness(0.4); */
+  /* filter: contrast(200%); */
+  /* filter: drop-shadow(16px 16px 20px blue); */
+  /* filter: grayscale(50%); */
+  /* filter: hue-rotate(90deg); */
+  /* filter: invert(75%); */
+  /* filter: opacity(25%); */
+  /* filter: saturate(30%); */
+  /* filter: sepia(60%); */
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.plan {
+  border: 5px solid black;
+  border-left: none;
+  padding: 2rem 1rem;
+  margin: 1rem 0;
+  width: 70%;
+  max-width: 43.2rem;
+  background-color: #943c5d;
+}
+
+/* .plan:hover,
+.plan:active {
+  border-color: #f2f8f8;
+  box-shadow: 2px 2px 4px gray;
+} */
+
+.recommended-package {
+  background: red;
+  border: none;
+  padding: 0.5rem;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  margin: 0;
+  font-size: 0.8rem;
+  transform: rotateZ(45deg) translateX(3.5rem) translateY(-1.6rem);
+  transform-origin: center;
+  width: 12rem;
+  text-align: center;
+}
+
+.package-title,
+.title-descp,
+.title-type {
+  margin: 1rem 0;
+}
+
+
+.package-title {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.title-descp {
+  font-size: 1.1rem;
+  border: 2px solid #f2f8f8;
+  background-color: black;
+  color: #f2f8f8;
+  padding: 1rem;
+  text-shadow: 0px 0px 5px rgb(185, 185, 185);
+  /*font shorthand:
+  /* font: font-style font-variant font-weight font-size/lineheight font-family; */
+  /*       italic     small-caps   700         1.2rem   /2          "Roboto Condensed, sans-serif"*/
+  /* font: status-bar; */
+}
+
+.fix {
+  clear: both;
+}
+
+#plan1 {
+  background-color: #994e69;
+  position: relative;
+  overflow: hidden;
+}
+
+#plan2 {
+  background-color: #9b5c73;
+  float: right;
+  border-left: 5px solid black;
+  border-right: none;
+}
+.plan a {
+  text-decoration: none;
+  color: #f2f8f8;
+  cursor: pointer;
+}
+.plan:hover,
+.plan:active, 
+#plan2:hover,
+#plan2:active {
+  border-color: #f2f8f8;
+  box-shadow: 2px 2px 4px gray;
+}
+
+@media (min-width: 40rem) {
+  main {
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+}
+
+@media (min-width: 692px) {
+  .plan {
+    border-left: 5px solid black;
+  }
+
+  #plan2 {
+    border-right: 5px solid black;
+    text-align: right;
+  }
+}

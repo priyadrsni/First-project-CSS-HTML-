@@ -1,0 +1,114 @@
+#img-section {
+  background: url('../images/diary1.jpg') center/cover no-repeat border-box;
+  /* background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-clip: border-box; */
+  /* background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6) 10%, transparent),
+  linear-gradient(to right,  rgb(51, 44, 44), transparent); */
+  /* background-image: radial-gradient(ellipse farthest-side at 20px 30px , yellow, green, orange ); */
+  height: 50vh;
+}
+
+#themes {
+  /* width: 100%; */
+  /* height: 25rem; */
+  text-align: center;
+}
+
+.themes-title {
+  margin: 1.2rem 0;
+  padding: 0.8rem;
+  color: #943c5d;
+  text-align: center;
+}
+
+.recommended-package {
+  background: black;
+  border-radius: 8px;
+  padding: 0.5rem;
+  display: inline-block;
+  margin: 0;
+  animation: wiggle 0.4s 1s 2 ease-out none;
+}
+
+.theme {
+  background-color: #e76c99;
+  color: #f2f8f8;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  /* display: flex; */
+  /* width: 30%; */
+  /* width: 100vw; */
+  /* box-shadow: 3px 3px 7px 3px grey; */
+}
+
+.recommended-theme {
+  background-color: #943c5d;
+}
+
+.prev-diaries {
+  margin: 0;
+  padding: 8px;
+  text-align: center;
+}
+
+.prev-diary-img {
+  /* background: url('../images/ancient.jpg');
+  background-position: center;
+  background-size: cover; */
+  width: 8rem;
+  height: 8rem;
+  background-color: #f2f8f8;
+  border: 2px solid rgb(215, 230, 12);
+  border-radius: 50%;
+  margin: auto;
+  padding: 1.6rem;
+}
+
+.prev-diary {
+  list-style: none;
+  font-size: 1.6rem;
+  color: #f2f8f8;
+  vertical-align: top;
+  height: 12.5rem;
+  width: 100vw;
+}
+
+@media (min-width: 40rem) and (min-height: 30rem) {
+  .theme {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    max-width: 20rem;
+  }
+
+  .recommended-theme {
+    box-shadow: 2px 2px 3px 2px rgb(100, 99, 99);
+    z-index: 1;
+  }
+
+  .prev-diary {
+    display: inline-block;
+    width: 30%;
+    box-shadow: 3px 2px 7px 4px gray;
+    border-radius: 5px;
+    padding: 8px;
+    max-width: 20rem;
+  }
+  .theme-div {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .prev-diaries {
+    text-align: center;
+    width: 100%;
+  }
+}
+
